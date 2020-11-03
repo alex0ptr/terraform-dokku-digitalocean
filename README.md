@@ -1,6 +1,6 @@
 # Terraform Module for Dokku Environments on Digitalocean
 
-As the name implies this is a Terraform module to create [Dokku](http://dokku.viewdocs.io/dokku/) instances on Digitalocean. See the examples folder to see a runnable example. If you want to install a demonstration app the example allows you to create a demo Spring Boot App and configure it with the dokku instance through its `create_spring_app` output command - make sure not to run it in this repository.
+As the name implies this is a Terraform module to create [Dokku](http://dokku.viewdocs.io/dokku/) instances on Digitalocean - without using the web UI. See the examples folder to see a runnable example. If you want to install a demonstration app the example allows you to create a demo Spring Boot App and configure it with the dokku instance through its `create_spring_app` output command - make sure not to run it in this repository.
 
 See `examples/main.tf` for an example usage and `var.tf` for the parameter description of the module.
 
@@ -52,3 +52,8 @@ Done with testing? Clean up everything with:
 ```shell
 terraform destroy
 ```
+
+## FAQ
+
+*Q:* Isn't there a Dokku image [on the Digitalocean Marketplace](https://marketplace.digitalocean.com/apps/dokku) that does exactly this?
+*A:* Yes, but the droplet creation and first configuration requires manual configuration through a browser. The module provides an unattended installation and makes it trivial to repeat this step a hundred times. Additionally having this in Terraform makes it easy to create more environments and to configure other resources together with the instance e.g. combine the droplet IP with your DNS config.

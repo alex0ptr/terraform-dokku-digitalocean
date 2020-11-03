@@ -1,5 +1,5 @@
 module dokku {
-  source = "../"
+  source = "git::https://github.com/alex0ptr/terraform-dokku-digitalocean.git?ref=main" # feel free to adjust to `v1.x.x`
 
   region          = "fra1"
   public_key      = file("~/.ssh/id_rsa.pub")

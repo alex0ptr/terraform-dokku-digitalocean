@@ -56,5 +56,5 @@ terraform destroy
 
 ## FAQ
 
-*Q:* Isn't there a Dokku image [on the Digitalocean Marketplace](https://marketplace.digitalocean.com/apps/dokku) that does exactly this?
-*A:* Yes, but the droplet creation and first configuration requires manual configuration through a browser. The module provides an unattended installation and makes it trivial to repeat this step a hundred times. Additionally having this in Terraform makes it easy to create more environments and to configure other resources together with the instance e.g. combine the droplet IP with your DNS config.
+**Q:** Isn't there a Dokku image [on the Digitalocean Marketplace](https://marketplace.digitalocean.com/apps/dokku) that does exactly this?  
+**A:** Yes, but the droplet creation and first configuration requires manual configuration through a browser. The module provides an unattended installation and makes it trivial to repeat this step a hundred times. Additionally having this in Terraform makes it easy to create more environments and to configure other resources together with the instance e.g. combine the droplet IP with your DNS config.

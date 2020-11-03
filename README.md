@@ -18,6 +18,7 @@ export DIGITALOCEAN_TOKEN=10fcaf...
 
 Now copy the `examples/main.tf` to an empty folder, make sure that `public_key` is pointing to an SSH public key that you want to use and is registered in your agent (`ssh-add <private-key-file>`). Now run:
 ```shell
+terraform init
 terraform apply
 ```
 

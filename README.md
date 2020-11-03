@@ -1,6 +1,6 @@
 # Terraform Module for Dokku Environments on Digitalocean
 
-As the name implies this is a Terraform module to create [dokku](http://dokku.viewdocs.io/dokku/) instances on Digitalocean. See the examples folder to see a runnable example. If you want to install a demonstration app the example allows you to create a demo Spring Boot App and configure it with the dokku instance through its `create_spring_app` output command - make sure not to run it in this repository.
+As the name implies this is a Terraform module to create [Dokku](http://dokku.viewdocs.io/dokku/) instances on Digitalocean. See the examples folder to see a runnable example. If you want to install a demonstration app the example allows you to create a demo Spring Boot App and configure it with the dokku instance through its `create_spring_app` output command - make sure not to run it in this repository.
 
 See `examples/main.tf` for an example usage and `var.tf` for the parameter description of the module.
 
